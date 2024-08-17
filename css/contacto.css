@@ -1,0 +1,68 @@
+#img_map_contacto {
+    display: flex;
+    justify-content: space-between;
+    margin-right:  40px;
+    margin-left:  40px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas más pequeñas */
+}
+
+#imgCadiz, #imgJerez, #imgSanFdo {
+    border: 5px solid orange;
+    margin-left: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+#imgCadiz:hover, #imgJerez:hover, #imgSanFdo:hover {
+    transform: scale(1.1);
+    border: 5px solid red;
+}
+
+#visit_nuest {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 50px;
+    font-style: italic;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); 
+}
+
+.tiendas {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+}
+
+.pincha_aqui {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 950px) {
+    #img_map_contacto {
+        flex-direction: column; /* Coloca las imágenes en una columna */
+        align-items: center; /* Centra las imágenes en la columna */
+        margin: 20px;
+    }
+
+    #imgCadiz, #imgJerez, #imgSanFdo {
+        width: 80%; /* Las imágenes ocupan el 80% del ancho del contenedor en pantallas pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo para centrar las imágenes */
+        margin-bottom: 40px; /* Añade margen inferior entre las imágenes */
+    }
+
+    .tiendas {
+        margin-bottom: 100px; /* Reduce el margen inferior para un mejor ajuste en pantallas pequeñas */
+        margin-top: 50px;
+    }
+}
